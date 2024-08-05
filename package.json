@@ -1,0 +1,25 @@
+{
+  "name": "rabbitmq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "send": "node sender.js",
+    "receive": "node receiver.js",
+    "compile": "npx tsc",
+    "start": "tsx --watch index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.1.0",
+    "amqplib": "^0.10.4",
+    "fastify": "^4.28.1",
+    "tsx": "^4.16.5",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.5"
+  }
+}
